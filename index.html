@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aeroporto Inteligente</title>
+    <!-- Aqui nós "puxamos" o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="painel">
+        <h2>Painel do Voo</h2>
+        
+        <!-- Lembre-se de colocar o nome da sua imagem aqui -->
+        <img src="viao.png" alt="Avião" id="imagem-aviao">
+        
+        <!-- Informações do Voo -->
+        <div class="infos">
+            <p><strong>Código:</strong> <span id="info-codigo">--</span></p>
+            <p><strong>Origem:</strong> <span id="info-origem">--</span></p>
+            <p><strong>Destino:</strong> <span id="info-destino">--</span></p>
+            <p><strong>Status:</strong> <span id="info-status">--</span></p>
+            <p><strong>Altitude:</strong> <span id="info-altitude">--</span></p>
+        </div>
+
+        <!-- Botões de Ação -->
+        <div class="botoes">
+            <button id="btn-decolar">Decolar ✈️</button>
+            <button id="btn-pousar">Pousar 🛬</button>
+        </div>
+    </div>
+
+    <!-- Aqui nós "puxamos" o arquivo JavaScript (sempre no final do body) -->
+    <script src="script.js"></script>
+</body>
+</html>
