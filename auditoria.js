@@ -12,6 +12,22 @@ R: [O erro aconteceu porque o atributo #cpf é privado e não pode ser acessado 
 R: [Porque ela tenta alterar diretamente um dado privado da classe. O encapsulamento existe para proteger informações sensíveis e impedir modificações externas sem controle, garantindo mais segurança e organização no sistema.]
 */
 
+/*  
+=========================================================
+RELATÓRIO DE AUDITORIA OOP (Mapeamento e Delegação)
+Auditores: [Nome do Aluno A] e [Nome do Aluno B]
+
+1. Por que um dado JSON (ex: {id: "123"}) que vem da internet não possui os métodos da nossa classe Voo? Como o comando 'new' resolve isso?
+
+R: Um objeto JSON é apenas um conjunto de dados, contendo propriedades e valores. Ele não é criado a partir da nossa classe Voo e, por isso, não possui seus métodos. Quando usamos o comando "new Voo(...)", criamos uma nova instância da classe, que recebe tanto os atributos quanto todos os métodos definidos nela, permitindo utilizar as funcionalidades da classe.
+
+2. O que aconteceria com a manutenção do sistema se tivéssemos 15 arquivos diferentes avaliando a velocidade do vento manualmente com "IFs", e amanhã a regra mudasse para "ventos > 100"? Por que colocar essa regra dentro do método da Classe Voo salva a nossa vida?
+
+R: Se a regra estivesse repetida em 15 arquivos, seria necessário alterar todos eles quando a regra mudasse, aumentando o risco de esquecer algum ou causar erros. Colocando essa validação em um método da classe Voo, basta modificar a regra em um único lugar. Assim, todo o sistema passa a utilizar automaticamente a nova regra, deixando o código mais organizado, fácil de manter e menos sujeito a falhas.
+
+=========================================================
+*/
+
 
 
 
