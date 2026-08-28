@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <title>Aeroporto Inteligente</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -12,149 +17,47 @@
 
         <h1>✈️ Aeroporto Inteligente</h1>
 
-        <!-- ===================== JATO EXECUTIVO ===================== -->
-        <div class="painel" id="jato">
+        <div class="painel">
 
-            <h2>Jato Executivo</h2>
+            <h2>Cadastro de Voo</h2>
 
-            <img src="viao.png" alt="Jato Executivo" id="img-jato" class="aviao-img">
+            <input
+                type="text"
+                id="inputCod"
+                placeholder="Código do voo"
+            >
 
-            <div class="infos">
-                <p>Código: <span id="jato-codigo">--</span></p>
-                <p>Status: <span id="jato-status">--</span></p>
-                <p>Altitude: <span id="jato-altitude">--</span></p>
-                <p class="destaque">
-                    Supersônico:
-                    <span id="jato-super">Desativado</span>
-                </p>
-            </div>
+            <input
+                type="text"
+                id="inputDest"
+                placeholder="Destino"
+            >
 
-            <div class="botoes">
-                <button id="btn-jato-decolar">Decolar ✈️</button>
-                <button id="btn-jato-pousar">Pousar 🛬</button>
-            </div>
-
-            <div class="botoes">
-                <button id="btn-ativar-super" class="btn-especial">
-                    Ativar Supersônico 🚀
-                </button>
-
-                <button id="btn-desativar-super">
-                    Desativar Supersônico
-                </button>
-            </div>
+            <button id="btnCadastrar">
+                Cadastrar Voo ✈️
+            </button>
 
         </div>
 
-        <!-- ===================== CARGUEIRO ===================== -->
-
-        <div class="painel" id="carga">
-
-            <h2>Avião Cargueiro</h2>
-
-            <img src="viao.png" alt="Avião Cargueiro" id="img-carga" class="aviao-img">
-
-            <div class="infos">
-
-                <p>Código: <span id="carga-codigo">--</span></p>
-
-                <p>Status: <span id="carga-status">--</span></p>
-
-                <p>Altitude: <span id="carga-altitude">--</span></p>
-
-                <p class="destaque">
-                    Capacidade:
-                    <span id="carga-max">--</span> ton
-                </p>
-
-                <p class="destaque">
-                    Carga Atual:
-                    <span id="carga-atual">--</span> ton
-                </p>
-
-            </div>
-
-            <div class="botoes">
-
-                <button id="btn-carga-decolar">
-                    Decolar ✈️
-                </button>
-
-                <button id="btn-carga-pousar">
-                    Pousar 🛬
-                </button>
-
-            </div>
-
-            <div class="controles-carga">
-
-                <input
-                    type="number"
-                    id="input-peso"
-                    placeholder="Peso (ton)"
-                    min="1">
-
-                <button
-                    id="btn-embarcar"
-                    class="btn-especial">
-
-                    Embarcar Carga 📦
-
-                </button>
-
-            </div>
-
-        </div>
-
-        <!-- ===================== COMBUSTÍVEL ===================== -->
 
         <div class="painel">
 
-            <h2>⛽ Abastecimento do Voo VIP-001</h2>
+            <h2>🛫 Voos Cadastrados</h2>
 
-            <p id="painelCombustivel">
-                Combustível: 100%
-            </p>
-
-            <div class="botoes">
-
-                <button id="btnGastar">
-                    Gastar Combustível (Voar)
-                </button>
-
-                <button id="btnAbastecerSeguro">
-                    Abastecer 10%
-                </button>
-
-            </div>
-
-            <p id="avisoSistema"></p>
-
-        </div>
-
-        <!-- ===================== RADAR GLOBAL ===================== -->
-
-        <div class="painel">
-
-            <h2>🌍 Radar Global</h2>
-
-            <div id="telaPainel">
-
-                <p>
-                    Aguardando conexão com o satélite...
-                </p>
-
-            </div>
+            <div id="telaPainel"></div>
 
         </div>
 
     </div>
 
-    <!-- Script principal do aeroporto -->
-    <script src="script.js"></script>
 
-    <!-- Radar Global (AV1) -->
-    <script type="module" src="radarGlobal.js"></script>
+    <!-- IMPORTANTE: type="module" -->
+
+    <script
+        type="module"
+        src="main.js">
+    </script>
 
 </body>
+
 </html>
